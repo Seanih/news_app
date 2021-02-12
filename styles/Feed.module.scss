@@ -1,0 +1,54 @@
+.main {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.post {
+	width: 500px;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid black;
+
+	img {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 16px;
+		cursor: pointer;
+		text-align: center;
+
+		&:hover {
+			color: rgb(0, 184, 184);
+		}
+	}
+}
+
+.paginator {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	div {
+		margin: 25px;
+	}
+
+	.current_page {
+		font-size: 2rem;
+		font-weight: bold;
+		color:rgb(0, 136, 199)
+	}
+
+	.active:hover {
+		cursor: pointer;
+		color: rgb(1, 173, 173);
+		transform: scale(1.2);
+	}
+
+	.disabled {
+		cursor: not-allowed;
+		color: rgb(179, 179, 179);
+	}
+}
